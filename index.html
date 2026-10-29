@@ -1,74 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja de Informática</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- FORMULÁRIO DE CADASTRO -->
-  <div class="form-card">
-    <h2>Dados do Produto:</h2>
-    <form id="formProduto">
-      <label for="secao">Seção:</label>
-      <select id="secao" required>
-        <option value="Computadores">Computadores</option>
-        <option value="Acessórios">Acessórios</option>
-        <option value="Impressoras">Impressoras</option>
-        <option value="Games">Games</option>
-        <option value="Gadgets">Gadgets</option>
-      </select>
-
-      <label for="marca">Marca:</label>
-      <select id="marca" required>
-        <option value="HP">HP</option>
-        <option value="Dell">Dell</option>
-        <option value="Positivo">Positivo</option>
-        <option value="Asus">Asus</option>
-        <option value="Xing Ling genérico">Xing Ling genérico</option>
-      </select>
-
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" required>
-
-      <label for="preco">Preço:</label>
-      <input type="number" id="preco" step="0.01" required>
-
-      <div class="radio-group">
-        <label><input type="radio" name="condicao" value="Novo" checked> Novo</label>
-        <label><input type="radio" name="condicao" value="Usado"> Usado</label>
-      </div>
-
-      <button type="submit">INSERIR PRODUTO</button>
-    </form>
-  </div>
-
-  <!-- ÁREAS ONDE OS CARDS SERÃO EXIBIDOS -->
-  <div class="secoes-container">
-    <div class="secao-area">
-      <h3>Computadores</h3>
-      <div id="Computadores" class="cards-grid"></div>
-    </div>
-    <div class="secao-area">
-      <h3>Acessórios</h3>
-      <div id="Acessórios" class="cards-grid"></div>
-    </div>
-    <div class="secao-area">
-      <h3>Impressoras</h3>
-      <div id="Impressoras" class="cards-grid"></div>
-    </div>
-    <div class="secao-area">
-      <h3>Games</h3>
-      <div id="Games" class="cards-grid"></div>
-    </div>
-    <div class="secao-area">
-      <h3>Gadgets</h3>
-      <div id="Gadgets" class="cards-grid"></div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Filmes</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
